@@ -6,6 +6,10 @@
     box-sizing: border-box; /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
 }
 
+body {
+    font-family: Poppins;
+}
+
 main {
     padding-top: 90px;
     padding-left: 90px;
@@ -32,7 +36,6 @@ header {
 
 .logo {
     color: #4A1D1F;
-    font-family: Poppins;
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -52,7 +55,6 @@ nav > ul > li {
 nav > ul > li > a {
     color: var(--black, #272727);
     text-align: center;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -100,6 +102,7 @@ nav > ul > li > a {
 #home {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 
 #home > article {
@@ -121,16 +124,14 @@ nav > ul > li > a {
 
 .home-titles > h1 {
     color: #4A1D1F;
-    font-family: Poppins;
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 } 
 
-.home-titles > h2 { 
+.home-titles > p { 
     color: #272727;
-    font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -149,7 +150,6 @@ nav > ul > li > a {
     align-items: center;
     gap: 10px;
 
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -181,4 +181,78 @@ nav > ul > li > a {
     opacity: 0.6;
     background: #FFF;
     backdrop-filter: blur(35.5px);
+}
+
+/* Categories section */
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    gap: 136px;
+}
+
+.categories-title {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    margin-right: 90px;
+}
+
+.categories-title > h2 {
+    width: 480px;
+    color: #4A1D1F;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.categories-title > p {
+    color: #272727;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+}
+
+.divider {
+    width: 1px;
+    height: 128px;
+    background: #4A1D1F;
+}
+
+.products {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product > img {
+    width: 231px;
+    height: 328px;
+}
+
+.ratings {
+    display: flex;
+    gap: 4px;
+}
+
+#categories > button {
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #4A1D1F;
 }
