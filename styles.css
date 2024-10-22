@@ -1,0 +1,87 @@
+/* Default CSS */
+
+* {
+    margin: 0; /* Remove the default margin for all elements */
+    padding: 0;  /* Remove the default padding for all elements */
+    box-sizing: border-box; /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 52px;
+    padding-right: 52px;
+
+    width: 100%;
+    height: 75px;
+
+    background: #FFF;
+}
+
+
+.logo {
+    color: #4A1D1F;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.navigation {
+    display: flex;
+    gap: 46px;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    color: var(--black, #272727);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.dynamic {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.search {
+    display: flex;
+}
+
+.search > input {
+    width: 251px;
+    height: 45px;
+
+    border: 0.5px solid #4A1D1F;
+}
+
+
+.search > button {
+    width: 45px;
+    height: 45px;
+
+    border: 0.5px solid #4A1D1F;
+    background: #4A1D1F;
+}
+
+.search > button > svg {
+    width: 19px;
+    height: 19px;
+
+    stroke-width: 2px;
+    stroke: #FBEDCD;
+}
