@@ -256,3 +256,46 @@ nav > ul > li > a {
     border-radius: 4px;
     border: 1px solid #4A1D1F;
 }
+
+/* About section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    gap: 228px;
+}
+
+#about > article {
+    display: flex;
+    margin-right: 90px;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-content > h2 {
+    color: #4A1D1F;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-content > p {
+    color: #272727;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 159%; /* 31.8px */
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
