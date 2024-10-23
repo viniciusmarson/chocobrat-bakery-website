@@ -12,7 +12,6 @@ body {
 
 main {
     padding-top: 90px;
-    padding-left: 90px;
     background-image: linear-gradient(to right, #FFFFFF, #FBEDCD);  
 }
 
@@ -298,4 +297,239 @@ nav > ul > li > a {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+
+/* contact section */
+#contact {
+    background-color: #FBEDCD;
+    width: 100%;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-title {
+    color: #4A1D1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-description {
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-button {
+    padding: 28px 16px;
+    border-radius: 6px;
+    background-color: #4A1D1F;
+    color: #F0FDF4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3A1A1C;
+}
+
+
+#recomendations {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 682px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* first container (QUOTES) */
+.quotes-container {
+    width: 64px;
+    height: 22px;
+    background-color: #FBEDCD;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-text {
+    color: #4A1D1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Second container (Review) */
+.review-container {
+    width: 977px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-text {
+    font-size: 48px;
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* image */
+.image-container {
+    width: 88px;
+    height: 88px;
+}
+
+.reviewer-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* name of the person */
+.reviewer-name {
+    width: 178px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4A1D1F;
+    text-align: center;
+}
+
+/* title person */
+.reviewer-title {
+    width: 224px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+    text-align: center;
+}
+
+/* Container with dots */
+.dots-container {
+    width: 60px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-light {
+    background-color: #FBEDCD;
+}
+
+.dot-dark {
+    background-color: #4A1D1F;
+}
+
+
+/* footer */
+#footer-section {
+    background-color: #FBEDCD;
+    width:100%;
+    height: 384px;
+    position: relative;
+}
+
+/* Style Chocobrat */
+.footer-logo {
+    position: absolute;
+    top: 81px;
+    left: 152px;
+    width: 184px;
+    height: 45px;
+}
+
+.footer-logo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #4A1D1F;
+}
+
+/* link */
+.footer-links {
+    position: absolute;
+    top: 90px;
+    left: 461px;
+    width: 863px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #272727;
+    margin: 0;
+}
+
+/* Line */
+.footer-divider {
+    width: 1440px;
+    height: 1px;
+    background-color: #4A1D1F;
+    position: absolute;
+    top: 169px;
+    left: 0;
+}
+
+
+.footer-copyright {
+    position: absolute;
+    top: 217px;
+    left: 150px;
+    width: 299px;
+    height: 24px;
+}
+
+.footer-copyright p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #272727;
+}
+
+.footer-social-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    position: absolute;
+    left: 1000px; 
+    top: 217px; 
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
