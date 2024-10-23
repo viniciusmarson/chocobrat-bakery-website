@@ -518,3 +518,18 @@ nav > ul > li > a {
     font-weight: 500;
     color: #272727;
 }
+
+.footer-social-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Spacing between icons */
+    position: absolute;
+    left: 1150px; /* Position for Instagram icon */
+    top: 217px; /* Align with copyright text */
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
