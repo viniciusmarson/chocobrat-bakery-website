@@ -301,7 +301,7 @@ nav > ul > li > a {
 }
 
 
-
+/* contact section */
 #contact {
     background-color: #FBEDCD;
     width: 100%;
@@ -343,4 +343,109 @@ nav > ul > li > a {
 
 .contact-button:hover {
     background-color: #3A1A1C;
+}
+
+
+#recomendations {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 682px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* first container (QUOTES) */
+.quotes-container {
+    width: 64px;
+    height: 22px;
+    background-color: #FBEDCD;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-text {
+    color: #4A1D1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Second container (Review) */
+.review-container {
+    width: 977px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-text {
+    font-size: 48px;
+    color: #272727;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* image */
+.image-container {
+    width: 88px;
+    height: 88px;
+}
+
+.reviewer-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* name of the person */
+.reviewer-name {
+    width: 178px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4A1D1F;
+    text-align: center;
+}
+
+/* title person */
+.reviewer-title {
+    width: 224px;
+    height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #272727;
+    text-align: center;
+}
+
+/* Container with dots */
+.dots-container {
+    width: 60px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-light {
+    background-color: #FBEDCD;
+}
+
+.dot-dark {
+    background-color: #4A1D1F;
 }
