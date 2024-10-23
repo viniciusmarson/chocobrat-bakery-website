@@ -12,7 +12,6 @@ body {
 
 main {
     padding-top: 90px;
-    padding-left: 90px;
     background-image: linear-gradient(to right, #FFFFFF, #FBEDCD);  
 }
 
@@ -448,4 +447,74 @@ nav > ul > li > a {
 
 .dot-dark {
     background-color: #4A1D1F;
+}
+
+
+/* footer */
+#footer-section {
+    background-color: #FBEDCD;
+    width:100%;
+    height: 384px;
+    position: relative;
+}
+
+/* Style Chocobrat */
+.footer-logo {
+    position: absolute;
+    top: 81px;
+    left: 152px;
+    width: 184px;
+    height: 45px;
+}
+
+.footer-logo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #4A1D1F;
+}
+
+/* link */
+.footer-links {
+    position: absolute;
+    top: 90px;
+    left: 461px;
+    width: 863px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #272727;
+    margin: 0;
+}
+
+/* Line */
+.footer-divider {
+    width: 1440px;
+    height: 1px;
+    background-color: #4A1D1F;
+    position: absolute;
+    top: 169px;
+    left: 0;
+}
+
+
+.footer-copyright {
+    position: absolute;
+    top: 217px;
+    left: 150px;
+    width: 299px;
+    height: 24px;
+}
+
+.footer-copyright p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #272727;
 }
