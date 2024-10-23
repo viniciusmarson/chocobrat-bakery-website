@@ -191,8 +191,7 @@ nav > ul > li > a {
     display: flex;
     overflow-x: auto;
     flex-wrap: nowrap;
-
-    border-radius: 100.5px;
+    border-left: 100.5px;
     opacity: 0.6;
     background: #FFF;
     backdrop-filter: blur(35.5px);
@@ -384,6 +383,7 @@ nav > ul > li > a {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 15%;
 }
 
 /* first container (QUOTES) */
@@ -399,14 +399,12 @@ nav > ul > li > a {
 
 .quotes-text {
     color: #4A1D1F;
-    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 
 /* Second container (Review) */
 .review-container {
-    width: 977px;
     height: 180px;
     display: flex;
     justify-content: center;
@@ -423,6 +421,7 @@ nav > ul > li > a {
 
 /* image */
 .image-container {
+    margin-top: 64px;
     width: 88px;
     height: 88px;
 }
