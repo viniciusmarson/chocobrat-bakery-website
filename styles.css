@@ -12,7 +12,15 @@ body {
 
 main {
     padding-top: 90px;
-    background-image: linear-gradient(to right, #FFFFFF, #FBEDCD);  
+}
+
+::placeholder {
+    color: #B4B4B4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 17px;
 }
 
 /* Header CSS */
@@ -102,6 +110,7 @@ nav > ul > li > a {
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    padding-left: 90px;
 }
 
 #home > article {
@@ -171,12 +180,18 @@ nav > ul > li > a {
     display: flex;
     flex-direction: column;
     margin-top: -150px;
+    background-image: linear-gradient(to right, #FFFFFF, #FBEDCD);  
+    z-index: -1;
 }
 
 .home-images-slider {
-    display: flex;
+    width: 965px;
+    height: 201px;
 
-    border-radius: 100.5px;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    border-left: 100.5px;
     opacity: 0.6;
     background: #FFF;
     backdrop-filter: blur(35.5px);
@@ -188,6 +203,7 @@ nav > ul > li > a {
     display: flex;
     flex-direction: column;
     gap: 136px;
+    padding-left: 90px;
 }
 
 .categories-title {
@@ -224,8 +240,9 @@ nav > ul > li > a {
 
 .products {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     overflow-x: scroll;
+    flex-wrap: nowrap;
 }
 
 .product {
@@ -263,6 +280,7 @@ nav > ul > li > a {
     flex-direction: column;
     margin-top: 250px;
     gap: 228px;
+    padding-left: 90px;
 }
 
 #about > article {
@@ -302,6 +320,7 @@ nav > ul > li > a {
 
 /* contact section */
 #contact {
+    margin-top: 73px;
     background-color: #FBEDCD;
     width: 100%;
     height: 367px;
@@ -329,21 +348,31 @@ nav > ul > li > a {
 }
 
 .contact-button {
-    padding: 28px 16px;
+    display: inline-flex;
+    height: 56px;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+
+    border-color: transparent;
     border-radius: 6px;
-    background-color: #4A1D1F;
-    color: #F0FDF4;
-    font-family: 'Poppins', sans-serif;
+    background: #4A1D1F;
+    box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+
+    color: var(--Primary-050, #F0FDF4);
+    /* text-lg/Medium */
+    font-family: Poppins;
     font-size: 18px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
 }
 
 .contact-button:hover {
     background-color: #3A1A1C;
 }
-
 
 #recomendations {
     background-color: #FFFFFF;
@@ -354,6 +383,7 @@ nav > ul > li > a {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 15%;
 }
 
 /* first container (QUOTES) */
@@ -369,14 +399,12 @@ nav > ul > li > a {
 
 .quotes-text {
     color: #4A1D1F;
-    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 
 /* Second container (Review) */
 .review-container {
-    width: 977px;
     height: 180px;
     display: flex;
     justify-content: center;
@@ -393,6 +421,7 @@ nav > ul > li > a {
 
 /* image */
 .image-container {
+    margin-top: 64px;
     width: 88px;
     height: 88px;
 }
@@ -449,18 +478,25 @@ nav > ul > li > a {
     background-color: #4A1D1F;
 }
 
-
 /* footer */
 #footer-section {
+    display: flex;
+    flex-direction: column;
     background-color: #FBEDCD;
     width:100%;
     height: 384px;
-    position: relative;
+    padding-top: 81px;
+
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px;
 }
 
 /* Style Chocobrat */
 .footer-logo {
-    position: absolute;
     top: 81px;
     left: 152px;
     width: 184px;
@@ -476,7 +512,6 @@ nav > ul > li > a {
 
 /* link */
 .footer-links {
-    position: absolute;
     top: 90px;
     left: 461px;
     width: 863px;
@@ -495,19 +530,18 @@ nav > ul > li > a {
 
 /* Line */
 .footer-divider {
-    width: 1440px;
+    width: 100%;
     height: 1px;
-    background-color: #4A1D1F;
-    position: absolute;
-    top: 169px;
-    left: 0;
+    background: rgba(74, 29, 31, 0.22);
 }
 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px;
+}
 
 .footer-copyright {
-    position: absolute;
-    top: 217px;
-    left: 150px;
     width: 299px;
     height: 24px;
 }
@@ -524,9 +558,6 @@ nav > ul > li > a {
     display: flex;
     align-items: center;
     gap: 40px; 
-    position: absolute;
-    left: 1000px; 
-    top: 217px; 
 }
 
 .social-icon {
